@@ -1,0 +1,16 @@
+a = 0
+b = 10000
+a += 1
+L=[]
+n=int(input("Enter the nth number : "))
+for i in range(a,b):
+ if(str(i) == str(i)[::-1]):
+ if(i>2):
+ for a in range(2,i):
+ y = True
+ if(i%a==0):
+ y = False
+ break
+ if y:
+ L.append(i)
+print(L[n-1],"is the",n,"th prime palindrome number")
